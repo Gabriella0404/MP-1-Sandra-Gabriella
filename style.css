@@ -1,7 +1,18 @@
+.body {
+}
+
 .startMenu__link {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.language-select__country {
-  color: blue;
+/* @media only screen and (min-width: 700px) {
+  body {
+    background-image: url(images/pattern-tablet.png);
+  }
+} */
+@media only screen and (max-width: 500px) {
+  body {
+    background-image: url(images/pattern-phone-two.png);
+    background-repeat: no-repeat;
+  }
 }
