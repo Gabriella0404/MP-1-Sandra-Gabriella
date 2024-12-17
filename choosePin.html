@@ -42,14 +42,22 @@
     </section>
     <!--For choosing the pin-->
     <section class="choose-pin">
-      <input class="choose-pin__pin-input" type="text" id="pin" name="pin" />
+      <label class="choose-pin__label" for="pin">Vælg en pinkode</label>
+      <input
+        class="choose-pin__pin-input"
+        type="text"
+        id="pin"
+        name="pin"
+        placeholder="Opret Pinkode (6 Cifre)"
+      />
       <input
         class="choose-pin__pin-input--confirm"
         type="text"
         id="pin"
         name="pin"
+        placeholder="Bekræft Pinkode (6 Cifre)"
       />
+      <a class="pin-confirmed" href="packagePop.html">OK</a>
     </section>
-    <a class="pin-confirmed" href="#">OK</a>
   </body>
 </html>
