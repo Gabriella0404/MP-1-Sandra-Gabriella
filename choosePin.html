@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vælg pinkode</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
     <section class="language-select">
@@ -33,22 +34,21 @@
     </section>
     <section>
       <!--Logo used across all login process screens-->
-      <img src="images/naerboks-logo.png" alt="The naerboks logo in blue" />
+      <img
+        class="logo"
+        src="images/naerboks-logo.png"
+        alt="The naerboks logo in blue"
+      />
     </section>
-    <!--Form for choosing pin-->
+    <!--For choosing the pin-->
     <section class="choose-pin">
-      <form class="choose-pin__form">
-        <label class="choose-pin__label" for="phone">Vælg en pinkode</label>
-        <br />
-        <input class="choose-pin__pin-input" type="text" id="pin" name="pin" />
-        <br />
-        <input
-          class="choose-pin__pin-input--confirm"
-          type="text"
-          id="pin"
-          name="pin"
-        />
-      </form>
+      <input class="choose-pin__pin-input" type="text" id="pin" name="pin" />
+      <input
+        class="choose-pin__pin-input--confirm"
+        type="text"
+        id="pin"
+        name="pin"
+      />
     </section>
     <a class="pin-confirmed" href="#">OK</a>
   </body>

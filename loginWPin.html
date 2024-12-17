@@ -41,25 +41,23 @@
       />
     </section>
     <section class="log-in">
-      <form class="log-in__phone-form">
-        <label class="log-in__label" for="phone">Phone Number:</label>
-        <input
-          class="log-in__phone-input"
-          type="text"
-          id="phone"
-          name="phone"
-        />
-      </form>
-      <form class="log-in__pin">
-        <!--Needs text standing in the input box-->
-        <label class="log-in__pin__label" for="phone"></label>
-        <input class="log-in__pin-input" type="text" id="phone" name="phone" />
-      </form>
-      <section class="log-in-btn">
-      <a class="log-in-btn__label" href="#">Log på</a>
-      </section>
-      <br />
-      <a class="pin-forgot" href="#">Glemt din pinkode?</a>
+      <input
+        class="log-in__phone-input"
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Mobil Nummer"
+      />
+      <input
+        class="log-in__pin-input"
+        type="text"
+        id="phone"
+        name="phone"
+        placeholder="Pinkode (6 Cifre)"
+      />
+      <!--This is help from a developer mozilla article about placeholder! -->
+      <a class="log-in__btn-label" href="#">Log på</a>
+      <a class="log-in__pin-forgot-label" href="#">Glemt din pinkode?</a>
     </section>
   </body>
 </html>
