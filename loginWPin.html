@@ -3,6 +3,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Log in med pincode</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body class="body">
     <section class="language-select">
@@ -33,7 +34,11 @@
     </section>
     <section>
       <!--Logo used across all login process screens-->
-      <img src="images/naerboks-logo.png" alt="The naerboks logo in blue" />
+      <img
+        class="logo"
+        src="images/naerboks-logo.png"
+        alt="The naerboks logo in blue"
+      />
     </section>
     <section class="log-in">
       <form class="log-in__phone-form">
@@ -50,7 +55,9 @@
         <label class="log-in__pin__label" for="phone"></label>
         <input class="log-in__pin-input" type="text" id="phone" name="phone" />
       </form>
-      <a class="log-in-btn" href="#">Log på</a>
+      <section class="log-in-btn">
+      <a class="log-in-btn__label" href="#">Log på</a>
+      </section>
       <br />
       <a class="pin-forgot" href="#">Glemt din pinkode?</a>
     </section>

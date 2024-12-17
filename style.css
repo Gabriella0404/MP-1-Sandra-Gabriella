@@ -99,4 +99,61 @@
     background-color: #1a7690;
     opacity: 20%;
   }
+  .log-in {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    /* width: 330px;
+    height: 275px; */
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    border: white solid 3px;
+    padding: 0px;
+    display: flex;
+  }
+  .log-in__phone-input {
+    /*Den default input styling*/
+    width: 300px;
+    height: 62px;
+    border-radius: 10px;
+    border: #0a5064 solid 2px;
+    background-color: #bae7f7; /*background colour is changed from figma design, as the opacity affects the border as well*/
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a5064;
+  }
+  .log-in__pin-input {
+    width: 300px;
+    height: 62px;
+    border-radius: 10px;
+    border: #0a5064 solid 2px;
+    background-color: #bae7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a5064;
+  }
+  .log-in-btn {
+    text-decoration: none;
+    width: 300px;
+    height: 55px;
+    background-color: #f68c47;
+    border-radius: 30px;
+    display: flex;
+    align-content: center;
+    justify-content: center; /*centres the text*/
+    align-items: center;
+  }
+  .log-in-btn__label {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #e1f9ff;
+  }
+  .pin-forgot {
+    color: #0a5064;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+  }
 }
