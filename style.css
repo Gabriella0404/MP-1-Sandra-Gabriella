@@ -1,18 +1,102 @@
-.body {
+.language-select {
+  color: #12a0d6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
 }
 
-.startMenu__link {
+.language-select__country {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.start-menu__logIn {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.start-menu__register {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-/* @media only screen and (min-width: 700px) {
-  body {
-    background-image: url(images/pattern-tablet.png);
-  }
-} */
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 600px) {
   body {
     background-image: url(images/pattern-phone-two.png);
     background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .logo {
+    width: 300px;
+    height: 50px;
+    margin: 3.5rem;
+    margin-top: 5.5rem;
+  }
+  .language-select {
+    /*Default language selector for all phone screens*/
+    color: #12a0d6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 0.5rem;
+  }
+  .start-menu {
+    /*Creating the frosted background*/
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    width: 330px;
+    height: 156px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    border: white solid 3px;
+    /* display: flex;
+    flex-direction: column; */
+  }
+  .start-menu__ul {
+    text-decoration: none;
+    list-style: none; /*Removes the bulletpoints of the UL*/
+    display: grid; /* Grid for button gaps*/
+    gap: 15px;
+    margin-left: 1rem;
+    padding: 0px;
+  }
+  .start-menu__link--blue {
+    background-color: #1abbe7;
+    width: 300px;
+    height: 49px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center; /*centres the text*/
+    align-items: center;
+  }
+  .start-menu__link--clear {
+    border: #0a5064 solid 2px;
+    width: 300px;
+    height: 49px;
+    border-radius: 10px;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center; /*Centres the text inside the link*/
+    align-items: center;
+  }
+  .start-menu__logIn {
+    text-decoration: none; /*Removes underline from links*/
+    color: #e1f9ff;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .start-menu__register {
+    text-decoration: none; /*Removes underline from links*/
+    color: #0a5064;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  .start-menu__link--blue:active {
+    background-color: #13aad3;
+  }
+  .start-menu__link--clear:active {
+    background-color: #1a7690;
+    opacity: 20%;
   }
 }
