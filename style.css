@@ -99,17 +99,21 @@
     background-color: #1a7690;
     opacity: 20%;
   }
+  /*This section is for the log in and registration screen*/
   .log-in {
     background-color: rgb(255, 255, 255, 0.5);
     backdrop-filter: blur(40px);
-    /* width: 330px;
-    height: 275px; */
+    width: 330px;
+    height: 275px;
     border-radius: 15px;
     margin: 2.5rem;
     box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
     border: white solid 3px;
-    padding: 0px;
+    gap: 1rem;
+    padding-top: 1.5rem;
     display: flex;
+    flex-direction: column;
+    align-items: center;
   }
   .log-in__phone-input {
     /*Den default input styling*/
@@ -134,26 +138,90 @@
     font-weight: 600;
     color: #0a5064;
   }
-  .log-in-btn {
+  .log-in__pin-input::placeholder {
+    color: #0a5064;
+    opacity: 50%;
+    text-align: center;
+  }
+  .log-in__phone-input::placeholder {
+    color: #0a5064;
+    opacity: 50%;
+    text-align: center;
+  }
+  .log-in__btn-label {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    color: #e1f9ff;
     text-decoration: none;
     width: 300px;
     height: 55px;
     background-color: #f68c47;
     border-radius: 30px;
-    display: flex;
-    align-content: center;
-    justify-content: center; /*centres the text*/
-    align-items: center;
+    text-align: center; /*helps centering the text inside the anchor button*/
+    line-height: 50.5px;
   }
-  .log-in-btn__label {
+  .log-in__pin__label {
+    /* padding-top: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  .log-in__label {
+    /* padding-top: 10px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+  }
+  .log-in__pin-forgot-label {
+    color: #0a5064;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+  }
+  /*This section is for the choose pin screen*/
+  .choose-pin {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    width: 330px;
+    height: 275px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    border: white solid 3px;
+  }
+  .choose-pin__pin-input {
+    width: 300px;
+    height: 62px;
+    border-radius: 10px;
+    border: #0a5064 solid 2px;
+    background-color: #bae7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a5064;
+  }
+  .choose-pin__pin-input--confirm {
+    width: 300px;
+    height: 62px;
+    border-radius: 10px;
+    border: #0a5064 solid 2px;
+    background-color: #bae7f7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    color: #0a5064;
+  }
+  .pin-confirmed {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 24px;
     color: #e1f9ff;
-  }
-  .pin-forgot {
-    color: #0a5064;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    text-decoration: none;
+    width: 300px;
+    height: 55px;
+    background-color: #f68c47;
+    border-radius: 30px;
+    text-align: center; /*helps centering the text inside the anchor button*/
+    line-height: 50.5px;
   }
 }
