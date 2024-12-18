@@ -11,7 +11,7 @@
   height: 533px;
   border-radius: 15px;
   margin: 1.7rem;
-  margin-top: 8rem;
+  margin-top: 12rem;
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
   border: white solid 3px;
 }
@@ -42,21 +42,21 @@
 .popup-window__package-1 {
   background-color: #1abbe7;
   border-radius: 10px;
-  height: 55px;
+  height: 75px;
   grid-column: 1;
   grid-row: 1;
 }
 .popup-window__package-2 {
   background-color: #1abbe7;
   border-radius: 10px;
-  height: 55px;
+  height: 75px;
   grid-column: 1;
   grid-row: 2;
 }
 .popup-window__package-3 {
   background-color: #1abbe7;
   border-radius: 10px;
-  height: 55px;
+  height: 75px;
   grid-column: 1;
   grid-row: 3;
 }
@@ -74,12 +74,17 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
 }
-.popup-window_label {
+.popup-window__label {
   color: #e1f9ff;
   grid-column: 2/3;
   align-self: center;
   justify-self: center;
+  margin-top: 1.5rem;
+  overflow: hidden; /*keeps the text on one line*/
+  white-space: nowrap; /*found help with from the website geeksforgeeks*/
+  font-size: 24;
 }
+
 .popup-window__package__box {
   height: 35px;
   grid-column: 3/3;
