@@ -38,7 +38,6 @@ body {
   margin-right: auto;
 }
 
-
 .language-select {
   /*Default language selector for all phone screens*/
   color: #12a0d6;
@@ -65,7 +64,6 @@ body {
   list-style: none; /*Removes the bulletpoints of the UL*/
   display: grid; /* Grid for button gaps*/
   gap: 15px;
-  margin-left: 1rem;
   padding: 0px;
 }
 .start-menu__link--blue {
@@ -132,6 +130,7 @@ body {
   font-size: 24px;
   font-weight: 600;
   color: #0a5064;
+  transform: scale(1);
 }
 .log-in__pin-input {
   height: 62px;
@@ -171,6 +170,7 @@ body {
   border-radius: 30px;
   text-align: center; /*helps centering the text inside the anchor button*/
   line-height: 50.5px;
+  width: 150px;
 }
 .log-in_btn-label:active {
   color: #f47932;
@@ -229,6 +229,7 @@ body {
   color: #0a5064;
   opacity: 50%;
   text-align: center;
+  width: 100%;
 }
 .choose-pin__pin-input--confirm {
   height: 62px;
