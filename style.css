@@ -31,7 +31,8 @@ body {
 }
 .logo {
   height: 50px;
-  margin: 3.5rem;
+  /* margin: 3.5rem; */
+  size: 100px;
   margin-top: 5.5rem;
 }
 .language-select {
