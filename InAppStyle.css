@@ -134,3 +134,114 @@
   font-size: 20px;
   color: #0a2e38;
 }
+@media only screen and (min-width: 410px) {
+  .popup-window__close-button--packages {
+    margin-left: 20rem;
+  }
+  .popup-window__close-button {
+    margin-left: 20rem;
+  }
+  .popup-window--location {
+    margin: 1.7rem;
+    margin-top: 12rem;
+  }
+  .popup-window__map {
+    width: 350px;
+  }
+}
+/* @media only screen and (min-width: 360px) {
+  .popup-window__close-button--packages {
+    margin-left: 16.5rem;
+  }
+  .popup-window__close-button {
+    margin-left: 16.5rem;
+  }
+  .popup-window--location {
+    margin: 1.7rem;
+    margin-top: 12rem;
+  }
+  .popup-window__map {
+    width: 300px;
+  }
+} */ /*Worked to make it more responsive for this size but unfortunately it messed up the rest of the code even with a max added*/
+@media only screen and (min-width: 600px) {
+  .body {
+    background-image: url(images/inAppBackground-tablet.png);
+    background-repeat: no-repeat;
+    position: relative;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
+  }
+  /*This section is for the package screens*/
+  .popup-window {
+    width: 834px;
+    height: 924px;
+    margin-left: 3.5rem;
+    margin-top: 16rem;
+    padding: 2rem;
+  }
+  .popup-window__h1 {
+    font-size: 36px;
+  }
+  .popup-window__h2 {
+    font-size: 32px;
+  }
+  .popup-window__package-1 {
+    height: 100px;
+  }
+  .popup-window__package-2 {
+    height: 100px;
+  }
+  .popup-window__package-3 {
+    height: 100px;
+  }
+  .popup-window__close-button--packages {
+    width: 40px;
+    height: 42px;
+    margin-left: 48rem;
+  }
+  .popup-window__package__arrow {
+    width: 55px;
+    height: 55px;
+  }
+  .popup-window__package__box {
+    width: 50px;
+    height: 50px;
+  }
+  .popup-window__label {
+    font-size: 36px;
+  }
+  /*This section is for the location pop up*/
+  .popup-window--location {
+    width: 834px;
+    height: 924px;
+    margin-left: 3.5rem;
+    margin-top: 16rem;
+    padding: 2rem;
+  }
+  .popup-window__close-button {
+    width: 40px;
+    height: 42px;
+    margin-left: 48rem;
+  }
+  .popup-window__map {
+    height: 600px;
+    width: 800px;
+    margin-left: 1rem;
+    margin-top: 2rem;
+  }
+  .popup-window__address--extended {
+    font-size: 32px;
+  }
+}
+@media only screen and (min-width: 1300px) {
+  /*landscape mode*/
+  /*This section is for the package pop up screen*/
+  .popup-window {
+    margin-left: 15rem;
+  }
+  .popup-window--location {
+    margin-left: 15rem;
+  }
+}
