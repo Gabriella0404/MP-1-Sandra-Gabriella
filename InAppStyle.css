@@ -1,4 +1,67 @@
-body {
-    background-image: url(images/pattern\ template\ phone.svg) ;
+@media only screen and (max-width: 600px) {
+  .body {
+    background-image: url(images/inAppBackground-phone.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .popup-window {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    width: 354px;
+    height: 533px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    border: white solid 3px;
+    display: grid;
+    grid-template-columns: repeat(4 1fr);
+  }
+  /* .popup-window__anchor {
+    background-color: #77d3f6;
+  } */
+  .popup-window__close-button {
+    background-color: #77d3f6;
+    border-radius: 10px;
+  }
+  .popup-window__h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #0a2e38;
+  }
+  .popup-window__h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight: 500;
+    color: #0a2e38;
+  }
+  .popup-window__package {
+    background-color: #1abbe7;
+    border-radius: 10px;
+    width: 300px;
+    height: 55px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+  }
+  .popup-window__package__arrow {
+    width: 24px;
+    height: 24px;
+    grid-column: 1/3;
+  }
+  .popup-window__package__redirect {
+    text-decoration: none;
+    color: #e1f9ff;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    grid-column: 2/3;
+  }
+  .popup-window_label {
+    color: #e1f9ff;
+  }
+  .popup-window__package__box {
+    width: 35px;
+    height: 35px;
+    grid-column: 3/3;
+  }
 }
-section {text-decoration-color: blueviolet;}
