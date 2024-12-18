@@ -138,6 +138,13 @@
     font-weight: 600;
     color: #0a5064;
   }
+  /*Active state for phone and pin inputs*/
+  .log-in__phone-input:active {
+    background-color: #9adbf3;
+  }
+  .log-in__pin-input:active {
+    background-color: #9adbf3;
+  }
   .log-in__pin-input::placeholder {
     color: #0a5064;
     opacity: 50%;
@@ -161,13 +168,14 @@
     text-align: center; /*helps centering the text inside the anchor button*/
     line-height: 50.5px;
   }
+  .log-in_btn-label:active {
+    color: #f47932;
+  }
   .log-in__pin__label {
-    /* padding-top: 10px; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
   .log-in__label {
-    /* padding-top: 10px; */
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
   }
@@ -212,6 +220,9 @@
     font-weight: 600;
     color: #0a5064;
   }
+  .choose-pin__pin-input:active {
+    background-color: #9adbf3;
+  }
   .choose-pin__pin-input::placeholder {
     color: #0a5064;
     opacity: 50%;
@@ -227,6 +238,9 @@
     font-size: 24px;
     font-weight: 600;
     color: #0a5064;
+  }
+  .choose-pin__pin-input--confirm:active {
+    background-color: #9adbf3;
   }
   .choose-pin__pin-input--confirm::placeholder {
     color: #0a5064;
@@ -271,6 +285,9 @@
     font-weight: 600;
     color: #0a5064;
   }
+  .code-answer__input:active {
+    background-color: #9adbf3;
+  } /*active state for the activation code*/
   .code-answer__input::placeholder {
     color: #0a5064;
     opacity: 50%;
@@ -344,5 +361,4 @@
     text-align: center; /*helps centering the text inside the anchor button*/
     line-height: 50.5px;
   }
-
 }

@@ -64,14 +64,30 @@
     grid-column: 3/3;
   }
   /*This section is for the location pop up screen*/
+  .popup-window--location {
+    background-color: rgb(255, 255, 255, 0.5);
+    backdrop-filter: blur(40px);
+    width: 354px;
+    height: 600px;
+    border-radius: 15px;
+    margin: 2.5rem;
+    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+    border: white solid 3px;
+  }
   .popup-window__map {
     width: 354px;
     height: 305px;
   }
   .popup-window__h3 {
     font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
     font-size: 24px;
+    color: #0a2e38;
+  }
+  .popup-window__address--extended {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
     color: #0a2e38;
   }
 }
