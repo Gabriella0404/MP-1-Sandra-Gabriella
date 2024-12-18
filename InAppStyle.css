@@ -1,8 +1,10 @@
 .body {
   background-image: url(images/inAppBackground-phone.png);
   background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center;
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
 }
 /*This section is for the package pop up*/
 .popup-window {
@@ -26,6 +28,19 @@
 .popup-window__close-button {
   background-color: #77d3f6;
   border-radius: 10px;
+  margin-left: 16rem;
+  margin-top: 0.5rem;
+}
+.popup-window__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup-window__close-button--packages {
+  background-color: #77d3f6;
+  border-radius: 10px;
+  margin-left: 17.5rem;
+  margin-top: 0.5rem;
 }
 .popup-window__h1 {
   font-family: Arial, Helvetica, sans-serif;
@@ -38,6 +53,7 @@
   font-size: 17px;
   font-weight: 500;
   color: #0a2e38;
+  margin-left: 12px;
 }
 .popup-window__package-1 {
   background-color: #1abbe7;
@@ -95,14 +111,16 @@
 .popup-window--location {
   background-color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(40px);
-  height: 600px;
+  height: 500px;
   border-radius: 15px;
   margin: 2.5rem;
+  margin-top: 12rem;
   box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
   border: white solid 3px;
 }
 .popup-window__map {
-  height: 305px;
+  height: 300px;
+  width: 290px;
 }
 .popup-window__h3 {
   font-family: Arial, Helvetica, sans-serif;

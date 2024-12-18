@@ -18,14 +18,9 @@
 
 body {
   background-image: url(images/pattern-phone-two.png);
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 100vh; */
   background-repeat: no-repeat;
   position: relative;
   height: 100vh;
-  /* width: 100vw; */
   margin: 0;
   background-size: cover;
 }
@@ -369,6 +364,7 @@ body {
   line-height: 50.5px;
 }
 @media only screen and (min-width: 600px) {
+  /*This section is for the first log in screen*/
   .start-menu__link--blue {
     height: 80px;
   }
@@ -385,6 +381,7 @@ body {
   .start-menu__register {
     font-size: 36px;
   }
+  /*This section is for the language navigation in the upper left corner*/
   .language-select {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -399,5 +396,53 @@ body {
   .language-select__arrow-drop {
     width: 40px;
     height: 40px;
+  }
+  /*This section is for the log in with pin screen*/
+  .code-send {
+    padding: 1rem;
+  }
+  .log-in__phone-input {
+    width: 600px;
+    height: 80px;
+  }
+  .log-in__pin-input {
+    width: 600px;
+    height: 80px;
+  }
+  .log-in__btn-label {
+    width: 300px;
+    font-size: 30px;
+  }
+  .log-in__pin-forgot-label {
+    font-size: 24px;
+  }
+  /*This section is for the send code screen*/
+  .code-send__label {
+    font-size: 30px;
+  }
+  .code-send__checkbox-container {
+    font-size: 30px;
+  }
+  .send-code-btn {
+    font-size: 30px;
+    padding: 10px;
+  }
+  /*This section is for the activate code screen*/
+  .code-answer__label {
+    font-size: 30px;
+  }
+  .resend-code-btn {
+    font-size: 25px;
+    padding: 10px;
+  }
+  .code-answer {
+    height: 220px;
+  }
+  /*This section is for the choose pin screen*/
+  .choose-pin__label {
+    font-size: 25px;
+  }
+  .pin-confirmed {
+    font-size: 35px;
   }
 }
