@@ -8,7 +8,6 @@
 .popup-window {
   background-color: rgb(255, 255, 255, 0.5); /*Frosted background*/
   backdrop-filter: blur(40px);
-  width: 354px;
   height: 533px;
   border-radius: 15px;
   margin: 1.7rem;
@@ -43,7 +42,6 @@
 .popup-window__package-1 {
   background-color: #1abbe7;
   border-radius: 10px;
-  width: 300px;
   height: 55px;
   grid-column: 1;
   grid-row: 1;
@@ -51,7 +49,6 @@
 .popup-window__package-2 {
   background-color: #1abbe7;
   border-radius: 10px;
-  width: 300px;
   height: 55px;
   grid-column: 1;
   grid-row: 2;
@@ -59,13 +56,11 @@
 .popup-window__package-3 {
   background-color: #1abbe7;
   border-radius: 10px;
-  width: 300px;
   height: 55px;
   grid-column: 1;
   grid-row: 3;
 }
 .popup-window__package__arrow {
-  width: 24px;
   height: 24px;
   grid-column: 1;
   align-self: center;
@@ -86,7 +81,6 @@
   justify-self: center;
 }
 .popup-window__package__box {
-  width: 35px;
   height: 35px;
   grid-column: 3/3;
   align-self: center;
@@ -96,7 +90,6 @@
 .popup-window--location {
   background-color: rgb(255, 255, 255, 0.5);
   backdrop-filter: blur(40px);
-  width: 354px;
   height: 600px;
   border-radius: 15px;
   margin: 2.5rem;
@@ -104,7 +97,6 @@
   border: white solid 3px;
 }
 .popup-window__map {
-  width: 354px;
   height: 305px;
 }
 .popup-window__h3 {
