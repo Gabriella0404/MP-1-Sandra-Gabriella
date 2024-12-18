@@ -16,349 +16,347 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    background-image: url(images/pattern-phone-two.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .logo {
-    width: 300px;
-    height: 50px;
-    margin: 3.5rem;
-    margin-top: 5.5rem;
-  }
-  .language-select {
-    /*Default language selector for all phone screens*/
-    color: #12a0d6;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    gap: 10px;
-    margin: 0.5rem;
-  }
-  .start-menu {
-    /*Creating the frosted background*/
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    width: 330px;
-    height: 156px;
-    border-radius: 15px;
-    margin: 2.5rem;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-    border: white solid 3px;
-    /* display: flex;
+body {
+  background-image: url(images/pattern-phone-two.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.logo {
+  width: 300px;
+  height: 50px;
+  margin: 3.5rem;
+  margin-top: 5.5rem;
+}
+.language-select {
+  /*Default language selector for all phone screens*/
+  color: #12a0d6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  margin: 0.5rem;
+}
+.start-menu {
+  /*Creating the frosted background*/
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  width: 330px;
+  height: 156px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  /* display: flex;
     flex-direction: column; */
-  }
-  .start-menu__ul {
-    text-decoration: none;
-    list-style: none; /*Removes the bulletpoints of the UL*/
-    display: grid; /* Grid for button gaps*/
-    gap: 15px;
-    margin-left: 1rem;
-    padding: 0px;
-  }
-  .start-menu__link--blue {
-    background-color: #1abbe7;
-    width: 300px;
-    height: 49px;
-    border-radius: 10px;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center; /*centres the text*/
-    align-items: center;
-  }
-  .start-menu__link--clear {
-    border: #0a5064 solid 2px;
-    width: 300px;
-    height: 49px;
-    border-radius: 10px;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center; /*Centres the text inside the link*/
-    align-items: center;
-  }
-  .start-menu__logIn {
-    text-decoration: none; /*Removes underline from links*/
-    color: #e1f9ff;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-  }
-  .start-menu__register {
-    text-decoration: none; /*Removes underline from links*/
-    color: #0a5064;
-    font-size: 24px;
-    display: flex;
-    justify-content: center;
-  }
-  .start-menu__link--blue:active {
-    background-color: #13aad3;
-  }
-  .start-menu__link--clear:active {
-    background-color: #1a7690;
-    opacity: 20%;
-  }
-  /*This section is for the log in and registration screen*/
-  .log-in {
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    width: 330px;
-    height: 275px;
-    border-radius: 15px;
-    margin: 2.5rem;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-    border: white solid 3px;
-    gap: 1rem;
-    padding-top: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .log-in__phone-input {
-    /*Den default input styling*/
-    width: 300px;
-    height: 62px;
-    border-radius: 10px;
-    border: #0a5064 solid 2px;
-    background-color: #bae7f7; /*background colour is changed from figma design, as the opacity affects the border as well*/
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a5064;
-  }
-  .log-in__pin-input {
-    width: 300px;
-    height: 62px;
-    border-radius: 10px;
-    border: #0a5064 solid 2px;
-    background-color: #bae7f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a5064;
-  }
-  /*Active state for phone and pin inputs*/
-  .log-in__phone-input:active {
-    background-color: #9adbf3;
-  }
-  .log-in__pin-input:active {
-    background-color: #9adbf3;
-  }
-  .log-in__pin-input::placeholder {
-    color: #0a5064;
-    opacity: 50%;
-    text-align: center;
-  }
-  .log-in__phone-input::placeholder {
-    color: #0a5064;
-    opacity: 50%;
-    text-align: center;
-  }
-  .log-in__btn-label {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: #e1f9ff;
-    text-decoration: none;
-    width: 300px;
-    height: 55px;
-    background-color: #f68c47;
-    border-radius: 30px;
-    text-align: center; /*helps centering the text inside the anchor button*/
-    line-height: 50.5px;
-  }
-  .log-in_btn-label:active {
-    color: #f47932;
-  }
-  .log-in__pin__label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-  .log-in__label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-  }
-  .log-in__pin-forgot-label {
-    color: #0a5064;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    padding-bottom: 15px;
-    padding-top: 5px;
-  }
-  /*This section is for the send code screen*/
+}
+.start-menu__ul {
+  text-decoration: none;
+  list-style: none; /*Removes the bulletpoints of the UL*/
+  display: grid; /* Grid for button gaps*/
+  gap: 15px;
+  margin-left: 1rem;
+  padding: 0px;
+}
+.start-menu__link--blue {
+  background-color: #1abbe7;
+  width: 300px;
+  height: 49px;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center; /*centres the text*/
+  align-items: center;
+}
+.start-menu__link--clear {
+  border: #0a5064 solid 2px;
+  width: 300px;
+  height: 49px;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center; /*Centres the text inside the link*/
+  align-items: center;
+}
+.start-menu__logIn {
+  text-decoration: none; /*Removes underline from links*/
+  color: #e1f9ff;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.start-menu__register {
+  text-decoration: none; /*Removes underline from links*/
+  color: #0a5064;
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+}
+.start-menu__link--blue:active {
+  background-color: #13aad3;
+}
+.start-menu__link--clear:active {
+  background-color: #1a7690;
+  opacity: 20%;
+}
+/*This section is for the log in and registration screen*/
+.log-in {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  width: 330px;
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  gap: 1rem;
+  padding-top: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.log-in__phone-input {
+  /*Den default input styling*/
+  width: 300px;
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7; /*background colour is changed from figma design, as the opacity affects the border as well*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.log-in__pin-input {
+  width: 300px;
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+/*Active state for phone and pin inputs*/
+.log-in__phone-input:active {
+  background-color: #9adbf3;
+}
+.log-in__pin-input:active {
+  background-color: #9adbf3;
+}
+.log-in__pin-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.log-in__phone-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.log-in__btn-label {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #e1f9ff;
+  text-decoration: none;
+  width: 300px;
+  height: 55px;
+  background-color: #f68c47;
+  border-radius: 30px;
+  text-align: center; /*helps centering the text inside the anchor button*/
+  line-height: 50.5px;
+}
+.log-in_btn-label:active {
+  color: #f47932;
+}
+.log-in__pin__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.log-in__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+.log-in__pin-forgot-label {
+  color: #0a5064;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+/*This section is for the send code screen*/
 
-  /*This section is for the choose pin screen*/
-  .choose-pin {
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    width: 330px;
-    height: 275px;
-    border-radius: 15px;
-    margin: 2.5rem;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-    border: white solid 3px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    align-items: center;
-  }
-  .choose-pin__label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #0a5064;
-    padding-top: 1rem;
-  }
-  .choose-pin__pin-input {
-    width: 300px;
-    height: 62px;
-    border-radius: 10px;
-    border: #0a5064 solid 2px;
-    background-color: #bae7f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a5064;
-  }
-  .choose-pin__pin-input:active {
-    background-color: #9adbf3;
-  }
-  .choose-pin__pin-input::placeholder {
-    color: #0a5064;
-    opacity: 50%;
-    text-align: center;
-  }
-  .choose-pin__pin-input--confirm {
-    width: 300px;
-    height: 62px;
-    border-radius: 10px;
-    border: #0a5064 solid 2px;
-    background-color: #bae7f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a5064;
-  }
-  .choose-pin__pin-input--confirm:active {
-    background-color: #9adbf3;
-  }
-  .choose-pin__pin-input--confirm::placeholder {
-    color: #0a5064;
-    opacity: 50%;
-    text-align: center;
-  }
-  .pin-confirmed {
-    text-decoration: none;
-    text-align: center;
-    font-size: 24px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f68c47;
-    color: #e1f9ff;
-    width: 300px;
-    height: 55px;
-    border-radius: 30px;
-    line-height: 50.5px;
-  }
-  /*This section is for the activate code screen*/
-  .code-answer {
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    width: 330px;
-    height: 200px;
-    border-radius: 15px;
-    margin: 2.5rem;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-    border: white solid 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-  }
-  .code-answer__input {
-    width: 300px;
-    height: 62px;
-    border-radius: 10px;
-    border: #0a5064 solid 2px;
-    background-color: #bae7f7;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    font-weight: 600;
-    color: #0a5064;
-  }
-  .code-answer__input:active {
-    background-color: #9adbf3;
-  } /*active state for the activation code*/
-  .code-answer__input::placeholder {
-    color: #0a5064;
-    opacity: 50%;
-    text-align: center;
-  }
-  .code-answer__label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #0a5064;
-    padding-top: 1rem;
-    text-align: center;
-  }
-  .resend-code-btn {
-    color: #0a5064;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-    padding-bottom: 15px;
-    padding-top: 5px;
-  }
-  .resend-code-btn {
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f68c47;
-    color: #e1f9ff;
-    width: 160px;
-    height: 40px;
-    border-radius: 30px;
-    line-height: 50.5px;
-  }
-  .code-send {
-    background-color: rgb(255, 255, 255, 0.5);
-    backdrop-filter: blur(40px);
-    width: 330px;
-    height: 275px;
-    border-radius: 15px;
-    margin: 2.5rem;
-    box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
-    border: white solid 3px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 1.5rem;
-  }
-  .code-send__label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    color: #0a5064;
-  }
-  .code-send__checkbox-container {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    color: #0a5064;
-    text-align: center;
-  }
-  .tos {
-    color: #0a5064;
-  }
-  .send-code-btn {
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 24px;
-    color: #e1f9ff;
-    text-decoration: none;
-    width: 300px;
-    height: 55px;
-    background-color: #f68c47;
-    border-radius: 30px;
-    text-align: center; /*helps centering the text inside the anchor button*/
-    line-height: 50.5px;
-  }
+/*This section is for the choose pin screen*/
+.choose-pin {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  width: 330px;
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+.choose-pin__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+  padding-top: 1rem;
+}
+.choose-pin__pin-input {
+  width: 300px;
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.choose-pin__pin-input:active {
+  background-color: #9adbf3;
+}
+.choose-pin__pin-input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.choose-pin__pin-input--confirm {
+  width: 300px;
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.choose-pin__pin-input--confirm:active {
+  background-color: #9adbf3;
+}
+.choose-pin__pin-input--confirm::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.pin-confirmed {
+  text-decoration: none;
+  text-align: center;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f68c47;
+  color: #e1f9ff;
+  width: 300px;
+  height: 55px;
+  border-radius: 30px;
+  line-height: 50.5px;
+}
+/*This section is for the activate code screen*/
+.code-answer {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  width: 330px;
+  height: 200px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.code-answer__input {
+  width: 300px;
+  height: 62px;
+  border-radius: 10px;
+  border: #0a5064 solid 2px;
+  background-color: #bae7f7;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  color: #0a5064;
+}
+.code-answer__input:active {
+  background-color: #9adbf3;
+} /*active state for the activation code*/
+.code-answer__input::placeholder {
+  color: #0a5064;
+  opacity: 50%;
+  text-align: center;
+}
+.code-answer__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+  padding-top: 1rem;
+  text-align: center;
+}
+.resend-code-btn {
+  color: #0a5064;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  padding-bottom: 15px;
+  padding-top: 5px;
+}
+.resend-code-btn {
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f68c47;
+  color: #e1f9ff;
+  width: 160px;
+  height: 40px;
+  border-radius: 30px;
+  line-height: 50.5px;
+}
+.code-send {
+  background-color: rgb(255, 255, 255, 0.5);
+  backdrop-filter: blur(40px);
+  width: 330px;
+  height: 275px;
+  border-radius: 15px;
+  margin: 2.5rem;
+  box-shadow: 10px 5px 5px rgb(0, 0, 0, 0.2);
+  border: white solid 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.code-send__label {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  color: #0a5064;
+}
+.code-send__checkbox-container {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #0a5064;
+  text-align: center;
+}
+.tos {
+  color: #0a5064;
+}
+.send-code-btn {
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  color: #e1f9ff;
+  text-decoration: none;
+  width: 300px;
+  height: 55px;
+  background-color: #f68c47;
+  border-radius: 30px;
+  text-align: center; /*helps centering the text inside the anchor button*/
+  line-height: 50.5px;
 }
