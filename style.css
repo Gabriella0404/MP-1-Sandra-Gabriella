@@ -377,5 +377,27 @@ body {
   }
   .start-menu {
     height: 220;
+    padding: 1rem;
+  }
+  .start-menu__logIn {
+    font-size: 36px;
+  }
+  .start-menu__register {
+    font-size: 36px;
+  }
+  .language-select {
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  .language-select__globe {
+    width: 40px;
+    height: 40px;
+  }
+  .language-select__country {
+    font-size: 36px;
+  }
+  .language-select__arrow-drop {
+    width: 40px;
+    height: 40px;
   }
 }
