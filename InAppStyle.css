@@ -16,9 +16,8 @@
     display: grid;
     grid-template-columns: repeat(4 1fr);
   }
-  /* .popup-window__anchor {
-    background-color: #77d3f6;
-  } */
+  .popup-window__grid {
+  }
   .popup-window__close-button {
     background-color: #77d3f6;
     border-radius: 10px;
@@ -63,5 +62,16 @@
     width: 35px;
     height: 35px;
     grid-column: 3/3;
+  }
+  /*This section is for the location pop up screen*/
+  .popup-window__map {
+    width: 354px;
+    height: 305px;
+  }
+  .popup-window__h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    color: #0a2e38;
   }
 }
