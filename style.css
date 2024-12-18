@@ -363,8 +363,12 @@ body {
   text-align: center; /*helps centering the text inside the anchor button*/
   line-height: 50.5px;
 }
+
 @media only screen and (min-width: 600px) {
   /*This section is for the first log in screen*/
+  body {
+    background-image: url(images/pattern-tablet.png); /*Change to downloaded png from Figma for the tablet size*/
+  }
   .start-menu__link--blue {
     height: 80px;
   }
@@ -410,7 +414,7 @@ body {
     height: 80px;
   }
   .log-in__btn-label {
-    width: 300px;
+    width: 572px;
     font-size: 30px;
   }
   .log-in__pin-forgot-label {
@@ -444,5 +448,39 @@ body {
   }
   .pin-confirmed {
     font-size: 35px;
+  }
+}
+@media only screen and (min-width: 900px) {
+  /*This section is for the log in w pin screen*/
+  body {
+    background-image: url(images/pattern-tablet.png);
+  }
+  .log-in {
+    width: 648px;
+    height: 373px;
+    margin-left: 10rem; /*Styling for the frosted background size to fit the figma design*/
+  }
+  .log-in__btn-label {
+    width: 572px;
+  }
+  /*This section is for the code send screen*/
+  .code-send {
+    width: 648px;
+    height: 373px;
+    margin-left: 10rem;
+  }
+  .code-answer {
+    width: 648px;
+    margin-left: 10rem;
+    padding-top: 1rem;
+  }
+  /*This section is for the choose pin screen*/
+  .choose-pin {
+    width: 648px;
+    height: 320px;
+    margin-left: 10rem;
+  }
+  .choose-pin__label {
+    font-size: 32px;
   }
 }
