@@ -15,11 +15,23 @@
 .start-menu__register {
   font-family: Arial, Helvetica, sans-serif;
 }
-
+.background-image {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+}
 body {
-  background-image: url(images/pattern-phone-two.png);
+  /* background-image: url(images/pattern-phone-two.png); */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-position: center;
+  height: 100vh; */
+  background-repeat: no-repeat;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
 }
 .logo {
   width: 300px;
