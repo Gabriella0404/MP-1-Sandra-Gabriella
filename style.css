@@ -353,7 +353,7 @@ body {
   text-align: center; /*helps centering the text inside the anchor button*/
   line-height: 50.5px;
 }
-
+/*Help for media query through Kevin Powell video on Youtube*/
 @media only screen and (min-width: 600px) {
   /*This section is for the first log in screen*/
   body {
